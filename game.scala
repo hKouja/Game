@@ -52,7 +52,7 @@ object game {
 
       if (Object1.toLowerCase.startsWith("k")) {
         println("You got yourself loose")
-        choice2()
+        //choice2()
       }
       else if (Object1.toLowerCase.startsWith("l")) {
         println("You don't want to put yourself on fire do you?")
@@ -70,7 +70,7 @@ object game {
 
       if (Object2.toLowerCase.startsWith("p")) {
         println("Now you can unlock the door with the key.")
-        choice3()
+        //choice3()
       }
       else if (Object2.toLowerCase.startsWith("d")) {
         println("The door is locked.")
@@ -86,7 +86,7 @@ object game {
       val Object3: String = choice3()
 
       if (Object3.toLowerCase.startsWith("b")) {
-        choice4()
+        //choice4()
       }
       else if (Object3.toLowerCase.startsWith("d")) {
         println("The kidnapper found you.")
