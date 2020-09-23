@@ -25,9 +25,7 @@ object game {
       |p=pick up the key, d=door
       |""".stripMargin)
 
-  def choice3(): String = readLine(
-    """
-      |Now you can open the door with the key.
+  def choice3(): String = readLine("""
       |You hear footsteps coming out from behind the door.
       |Do you open the door or back off?
       |o=open the door, b=back off
@@ -65,7 +63,6 @@ object game {
 
       // Choice 2:
 
-      println("hej")
       val Object2: String = choice2()
 
       if (Object2.toLowerCase.startsWith("p")) {
@@ -88,7 +85,7 @@ object game {
       if (Object3.toLowerCase.startsWith("b")) {
         //choice4()
       }
-      else if (Object3.toLowerCase.startsWith("d")) {
+      else if (Object3.toLowerCase.startsWith("o")) {
         println("The kidnapper found you.")
         isDead = true
       }
@@ -105,6 +102,7 @@ object game {
         isSolved = true
       }
       else if (Object4.toLowerCase.startsWith("f")) {
+        println ("The kidnapper is much stronger.")
         isDead = true
       }
       else {
@@ -112,7 +110,7 @@ object game {
         choice4()
       }
     }
-
+  }
 
     def main(args: Array[String]): Unit = {
 
@@ -124,8 +122,5 @@ object game {
       else if (isDead) lose()
       else win()
 
-
     }
-
-  }
 }
